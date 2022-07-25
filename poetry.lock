@@ -187,6 +187,14 @@ optional = false
 python-versions = ">=3.8"
 
 [[package]]
+name = "pytz"
+version = "2022.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "replit"
 version = "3.2.4"
 description = "A library for interacting with features of repl.it"
@@ -203,7 +211,7 @@ Werkzeug = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "requests"
-version = "2.28.0"
+version = "2.28.1"
 description = "Python HTTP for Humans."
 category = "main"
 optional = false
@@ -211,13 +219,13 @@ python-versions = ">=3.7, <4"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
-charset-normalizer = ">=2.0.0,<2.1.0"
+charset-normalizer = ">=2,<3"
 idna = ">=2.5,<4"
 urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
-use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "typing-extensions"
@@ -278,7 +286,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "3a57e77aceecd0ac2626b9c6575b2fe0686e47df9fe22a7969a66fba3916bb42"
+content-hash = "f0d5337c3fd9423603bbce8c2a20f6ec86845e2a85bdc08d01bd2f30a1662576"
 
 [metadata.files]
 aiohttp = []
@@ -298,6 +306,7 @@ jinja2 = []
 markupsafe = []
 multidict = []
 numpy = []
+pytz = []
 replit = []
 requests = []
 typing-extensions = []
