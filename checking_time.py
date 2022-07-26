@@ -10,7 +10,7 @@ def check_six():
   y = int(now.strftime("%Y"))
   if datetime.date(y,m,d).weekday() < 5:
     current_time = now.strftime("%H")
-    if current_time == "10":
+    if current_time == "06":
       return 0
     else:
       return 1

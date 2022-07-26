@@ -11,7 +11,7 @@ async def loop():
     if "database" in db.keys():
       database = db["database"]
       for i in range(len(db["database"])):
-        print(str(i+1), db["database"][i][0], db["database"][i][1])
+        print(str(i+1), db["database"][i][0], db["database"][i][1], db["database"][i][2])
       break
     else:
       await asyncio.sleep(60)
