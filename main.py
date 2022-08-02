@@ -14,7 +14,7 @@ async def loop():
         print(str(i+1), db["database"][i][0], db["database"][i][1], db["database"][i][2])
       break
     else:
-      await asyncio.sleep(60)
+      await asyncio.sleep(30)
 
   # Constant or init variables
   cool_down = 0
@@ -37,7 +37,7 @@ async def loop():
 
     if cool_down == 0:
       # ready
-      await asyncio.sleep(60)
+      await asyncio.sleep(30)
 
     # if ran already at 6
     elif cool_down == 1:
@@ -45,10 +45,10 @@ async def loop():
         # this makes sure that the code runs once at 6, and goes into cooldown. Once it's not 6, it goes off cooldown and becomes available again.
         cool_down = 0
         # no longer 6
-        await asyncio.sleep(60)
+        await asyncio.sleep(30)
       else:
         # not ready
-        await asyncio.sleep(60)
+        await asyncio.sleep(30)
 
 keep_alive()
 asyncio.run(loop())
