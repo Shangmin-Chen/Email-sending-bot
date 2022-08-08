@@ -2,7 +2,7 @@ from keep_alive import keep_alive
 from replit import db
 import asyncio
 from checking_time import check_six
-import algorithm
+from send_email import execute
 
 # this loop will be async
 async def loop():
@@ -29,7 +29,7 @@ async def loop():
         except Exception as e:
           print(e)
         try:
-          algorithm.execute(database)
+          execute(database)
         except Exception as e:
           print(e)
           # make it go on cooldown
